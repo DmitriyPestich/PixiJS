@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Pixijs</title>
+    <link rel="stylesheet" type="text/css" href="libs/fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -11,24 +13,34 @@
     <div class="container_game">
         <div class="wrapper">
             <div class="info_block">
-                <div class="current_number">
-                    0
+                <div class="info_current_num">
+                    <div class="desc_current_num">
+                        Number of current shapes
+                    </div>
+                    <div class="current_number">
+                        0
+                    </div>
                 </div>
-                <div class="area">
-                    0
+                <div class="info_area">
+                    <div class="desc_current_num">
+                        Area occupied by shapes
+                    </div>
+                    <div class="area">
+                        0
+                    </div>
                 </div>
             </div>
             <div id="canvas"></div>
             <div class="controller_block">
                 <div class="number_per_sec">
-                    <div class="minus_per_sec">-</div>
-                    <div class="plus_per_sec">+</div>
-                    <div class="info_per_sec">0,5<span> per/sec</span></div>
+                    <div class="minus_per_sec"><i class="fas fa-minus"></i></div>
+                    <div class="plus_per_sec"><i class="fas fa-plus"></i></div>
+                    <div class="info_per_sec">0,5</div><span>per/sec</span>
                 </div>
                 <div class="gravity_value">
-                    <div class="minus_grav">-</div>
-                    <div class="plus_grav">+</div>
-                    <div class="info_grav">4<span> gravity</span></div>
+                    <div class="minus_grav"><i class="fas fa-minus"></i></div>
+                    <div class="plus_grav"><i class="fas fa-plus"></i></div>
+                    <div class="info_grav">4</div><span>gravity</span>
                 </div>
             </div>
         </div>

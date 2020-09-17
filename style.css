@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 #canvas{
     display: block;
@@ -16,31 +17,43 @@ body .Game{
     align-items: center;
 }
 body .Game .container_game{
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 body .Game .container_game .info_block{
     display: flex;
-    height: 30px;
+    height: 50px;
     align-items: center;
 }
 
-body .Game .container_game .info_block .current_number{
+body .Game .container_game .info_block .info_current_num{
+    width: 230px;
+}
+body .Game .container_game .info_block .info_area{
+    width: 230px;
+}
+
+body .Game .container_game .info_block .info_current_num .desc_current_num{
+    text-align: center;
+}
+body .Game .container_game .info_block .info_area .desc_current_num{
+    text-align: center;
+}
+
+body .Game .container_game .info_block .info_current_num .current_number{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 100%;
+    height: 30px;
     border-top: 1px solid;
     border-left: 1px solid;
     border-right: 1px solid;
 }
-body .Game .container_game .info_block .area{
+body .Game .container_game .info_block .info_area .area{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 100%;
+    height: 30px;
     border-top: 1px solid;
     border-right: 1px solid;
 }
@@ -51,6 +64,7 @@ body .Game .container_game .controller_block .number_per_sec{
     display: flex;
     align-items: center;
     margin-top: 15px;
+    width: 200px;
 }
 body .Game .container_game .controller_block .number_per_sec .minus_per_sec{
     display: flex;
@@ -60,6 +74,8 @@ body .Game .container_game .controller_block .number_per_sec .minus_per_sec{
     border: 2px solid;
     border-radius: 10px 0 0 10px;
     width: 50px;
+    height: 34px;
+    font-size: 18px;
 }
 body .Game .container_game .controller_block .number_per_sec .plus_per_sec{
     display: flex;
@@ -71,18 +87,18 @@ body .Game .container_game .controller_block .number_per_sec .plus_per_sec{
     border-bottom: 2px solid;
     border-radius: 0 10px 10px 0;
     width: 50px;
+    height: 34px;
+    font-size: 18px;
 }
 body .Game .container_game .controller_block .number_per_sec .info_per_sec{
     margin-left: 20px;
 }
 
-
-
 body .Game .container_game .controller_block .gravity_value{
     display: flex;
     align-items: center;
     margin-top: 15px;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 body .Game .container_game .controller_block .gravity_value .minus_grav{
     display: flex;
@@ -92,6 +108,8 @@ body .Game .container_game .controller_block .gravity_value .minus_grav{
     border: 2px solid;
     border-radius: 10px 0 0 10px;
     width: 50px;
+    height: 34px;
+    font-size: 18px;
 }
 body .Game .container_game .controller_block .gravity_value .plus_grav{
     display: flex;
@@ -103,7 +121,13 @@ body .Game .container_game .controller_block .gravity_value .plus_grav{
     border-bottom: 2px solid;
     border-radius: 0 10px 10px 0;
     width: 50px;
+    height: 34px;
+    font-size: 18px;
 }
 body .Game .container_game .controller_block .gravity_value .info_grav{
     margin-left: 20px;
+}
+
+body .Game .container_game .controller_block span{
+    margin-left: 5px;
 }

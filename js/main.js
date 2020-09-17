@@ -6,7 +6,7 @@ window.onload = function () {
     let width = 800, height = 500;
     let colors = [0xFFFF0B, 0xFF700B, 0x4286f4, 0x4286f4, 0xf441e8, 0x8dff6d, 0x41ccc9, 0xe03375, 0x95e032, 0x77c687, 0x43ba5b, 0x0ea3ba]; //массив цветов
     let gravity = 4;
-    let persec = 500;
+    let sec = 500;
     let AreaContainer, interval, positionX, positionY;
     let Figures = [];
 
@@ -259,7 +259,7 @@ window.onload = function () {
         }
     }
 
-
+/*====================================START MODEL==============================================*/
     let model = {
         createCanvas: function () {
             const canvas = document.getElementById('canvas');
@@ -270,7 +270,7 @@ window.onload = function () {
             let container = new PIXI.Graphics();
             AreaContainer = width * height;
             container.lineStyle(0);
-            container.beginFill();
+            container.beginFill(0x3C3C3C);
             container.drawRect(0, 0, width, height);
             container.endFill();
             container.interactive = true;
@@ -280,8 +280,8 @@ window.onload = function () {
         },
         setinterval: function () {
             clearInterval(interval);
-            interval = setInterval(view.createFigure, persec);
-            setInterval(model.clearFigure, persec / 3);
+            interval = setInterval(view.createFigure, sec);
+            setInterval(model.clearFigure, sec / 3);
         },
         clearFigure: function () {
             Figures = Figures.filter(function (item) {
@@ -291,18 +291,18 @@ window.onload = function () {
             model.sumArea();
         },
         secplus: function () {
-            persec += 500;
+            sec += 500;
             model.setinterval();
-            view.infopersec(persec);
+            view.infopersec(sec);
         },
         secminus: function () {
-            if(persec === 500){
-                persec = 500;
+            if(sec === 500){
+                sec = 500;
             }else{
-                persec -= 500;
+                sec -= 500;
             }
             model.setinterval();
-            view.infopersec(persec);
+            view.infopersec(sec);
         },
         garavplus: function () {
             gravity += 1;
@@ -359,7 +359,9 @@ window.onload = function () {
             view.infoArea(Area);
         }
     };
+    /*====================================FINISH MODEL==============================================*/
 
+    /*====================================START VIEW==============================================*/
     let view = {
 
         createFigure: function (x, y) {
@@ -403,8 +405,9 @@ window.onload = function () {
             model.setinterval();
         }
     };
+    /*====================================FINISH VIEW==============================================*/
 
-
+    /*====================================FINISH CONTROLLER==============================================*/
     let controller = {
         spawnfigure: function (event) {
             const {x, y} = event.data.global;
@@ -442,8 +445,10 @@ window.onload = function () {
             });
         }
     };
+    /*====================================FINISH CONTROLLER==============================================*/
 
 
+    /*====================================ADDITIONAL FUNCTION==============================================*/
     function intrand() {
         return Math.floor(Math.random() * 7);
     }
