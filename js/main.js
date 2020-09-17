@@ -10,7 +10,7 @@ window.onload = function () {
     let AreaContainer, interval, positionX, positionY;
     let Figures = [];
 
-
+    /*====================================START FIGURES ==============================================*/
     let DataCircle = {
         radius: 40,
         AreaCircle: function () {
@@ -258,8 +258,9 @@ window.onload = function () {
             });
         }
     }
+    /*====================================FINISH FIGURES ==============================================*/
 
-/*====================================START MODEL==============================================*/
+    /*====================================START MODEL==============================================*/
     let model = {
         createCanvas: function () {
             const canvas = document.getElementById('canvas');
