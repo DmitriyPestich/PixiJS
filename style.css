@@ -22,7 +22,7 @@ body .Game .container_game{
 
 body .Game .container_game .info_block{
     display: flex;
-    height: 50px;
+    height: 48px;
     align-items: center;
 }
 
@@ -44,7 +44,7 @@ body .Game .container_game .info_block .info_current_num .current_number{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30px;
+    height: 32px;
     border-top: 1px solid;
     border-left: 1px solid;
     border-right: 1px solid;
@@ -53,7 +53,7 @@ body .Game .container_game .info_block .info_area .area{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30px;
+    height: 32px;
     border-top: 1px solid;
     border-right: 1px solid;
 }
@@ -64,24 +64,34 @@ body .Game .container_game .controller_block .number_per_sec{
     display: flex;
     align-items: center;
     margin-top: 15px;
-    width: 200px;
+    width: 185px;
 }
 body .Game .container_game .controller_block .number_per_sec .minus_per_sec{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
     border: 2px solid;
     border-radius: 10px 0 0 10px;
     width: 50px;
     height: 34px;
     font-size: 18px;
 }
+body .Game .container_game .controller_block .number_per_sec .minus_per_sec:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 10px 0 0 10px;
+    width: 50px;
+    height: 34px;
+    cursor: pointer;
+    font-size: 22px;
+    color:#ff253a;
+}
 body .Game .container_game .controller_block .number_per_sec .plus_per_sec{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
     border-right: 2px solid;
     border-top: 2px solid;
     border-bottom: 2px solid;
@@ -89,6 +99,20 @@ body .Game .container_game .controller_block .number_per_sec .plus_per_sec{
     width: 50px;
     height: 34px;
     font-size: 18px;
+}
+body .Game .container_game .controller_block .number_per_sec .plus_per_sec:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-radius: 0 10px 10px 0;
+    width: 50px;
+    height: 34px;
+    cursor: pointer;
+    font-size: 22px;
+    color:#11d111;
 }
 body .Game .container_game .controller_block .number_per_sec .info_per_sec{
     margin-left: 20px;
@@ -104,18 +128,28 @@ body .Game .container_game .controller_block .gravity_value .minus_grav{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
     border: 2px solid;
     border-radius: 10px 0 0 10px;
     width: 50px;
     height: 34px;
     font-size: 18px;
 }
+body .Game .container_game .controller_block .gravity_value .minus_grav:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 10px 0 0 10px;
+    width: 50px;
+    height: 34px;
+    cursor: pointer;
+    font-size: 22px;
+    color:#ff253a;
+}
 body .Game .container_game .controller_block .gravity_value .plus_grav{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
     border-right: 2px solid;
     border-top: 2px solid;
     border-bottom: 2px solid;
@@ -123,6 +157,20 @@ body .Game .container_game .controller_block .gravity_value .plus_grav{
     width: 50px;
     height: 34px;
     font-size: 18px;
+}
+body .Game .container_game .controller_block .gravity_value .plus_grav:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-radius: 0 10px 10px 0;
+    width: 50px;
+    height: 34px;
+    cursor: pointer;
+    font-size: 22px;
+    color:#11d111;
 }
 body .Game .container_game .controller_block .gravity_value .info_grav{
     margin-left: 20px;

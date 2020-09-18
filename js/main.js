@@ -355,7 +355,7 @@ window.onload = function () {
 
             let AreaFigures = AreaCircles + AreaRectangles + AreaEllipses + AreaTriangles + AreaFiveSides + AreaSixSides + AreaStar;
 
-            let Area = ((AreaFigures / AreaContainer)*100).toFixed(2);
+            let Area = Math.floor(AreaFigures);
 
             view.infoArea(Area);
         }
