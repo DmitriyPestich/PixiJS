@@ -6,7 +6,7 @@ window.onload = function () {
     let colors = [0xFFFF0B, 0xFF700B, 0x4286f4, 0x4286f4, 0xf441e8, 0x8dff6d, 0x41ccc9, 0xe03375, 0x95e032, 0x77c687, 0x43ba5b, 0x0ea3ba];
     let gravity = 4;
     let sec = 500;
-    let AreaContainer, interval, positionX, positionY;
+    let interval, positionX, positionY;
     let Figures = [];
 
     /*====================================START FIGURES ==============================================*/
@@ -268,7 +268,6 @@ window.onload = function () {
         },
         container: function (){
             let container = new PIXI.Graphics();
-            AreaContainer = width * height;
             container.lineStyle(0);
             container.beginFill(0x3C3C3C);
             container.drawRect(0, 0, width, height);
