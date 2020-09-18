@@ -117,7 +117,6 @@ body .Game .container_game .controller_block .number_per_sec .plus_per_sec:hover
 body .Game .container_game .controller_block .number_per_sec .info_per_sec{
     margin-left: 20px;
 }
-
 body .Game .container_game .controller_block .gravity_value{
     display: flex;
     align-items: center;
@@ -144,7 +143,7 @@ body .Game .container_game .controller_block .gravity_value .minus_grav:hover{
     height: 34px;
     cursor: pointer;
     font-size: 22px;
-    color:#ff253a;
+    color: #ff253a;
 }
 body .Game .container_game .controller_block .gravity_value .plus_grav{
     display: flex;

@@ -21,4 +21,3 @@ In the bottom you will add a couple on controls:
 -/+ increase or decrease the number of shapes generated per second 
 
 -/+ increase or decrease the gravity value 
-
