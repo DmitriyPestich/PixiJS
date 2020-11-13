@@ -280,7 +280,7 @@ window.onload = function () {
         setinterval: function () {
             clearInterval(interval);
             interval = setInterval(view.createFigure, sec);
-            setInterval(model.clearFigure, sec / 3);
+            setInterval(model.clearFigure, 50);
         },
         clearFigure: function () {
             Figures = Figures.filter(function (item) {
